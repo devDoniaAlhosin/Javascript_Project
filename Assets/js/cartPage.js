@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function handleUserAuthentication(action) {
   if (action === "checkLogin") {
-    if (localStorage.getItem("email") && localStorage.getItem("password")) {
+    if (localStorage.getItem("user")) {
       console.log("User is logged in. Proceeding to add to cart.");
     } else {
       localStorage.removeItem("productsInCart");

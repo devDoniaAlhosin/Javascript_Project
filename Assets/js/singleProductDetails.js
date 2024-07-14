@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function handleUserAuthentication(action) {
   if (action === "checkLogin") {
-    if (localStorage.getItem("email") && localStorage.getItem("password")) {
+    if (localStorage.getItem("user")) {
       console.log("User is logged in. Proceeding to add to cart.");
     } else {
       localStorage.removeItem("productsInCart");
@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const li = document.createElement("li");
 
       const rating = document.createElement("p");
-      rating.textContent = `Rating:  ${review.rating}</i> `;
+      rating.textContent = `Rating:  ${review.rating}`;
 
       const comment = document.createElement("p");
       comment.textContent = `Comment: ${review.comment}`;

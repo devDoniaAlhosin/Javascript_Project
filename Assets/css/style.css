@@ -725,7 +725,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #f4f4f4; */
-  background-image: src("/Java Script Project/Assets/img/shop.jpg");
+  background-image: src("./Assets/img/shop.jpg");
 }
 
 .hero-section {
@@ -734,8 +734,7 @@ body {
   padding: 100px 0;
   position: relative;
   box-shadow: 0 4px 10px white;
-  background: url("/Java Script Project/Assets/img/shop.jpg") center/cover
-    no-repeat;
+  background: url("../img/shop.jpg") center/cover no-repeat;
   background-size: 100% 100%;
 }
 
@@ -1170,6 +1169,7 @@ section {
   text-align: center;
   padding: 50px 20px;
   background-color: #fff;
+  display: flex;
 }
 
 .features-section h3 {

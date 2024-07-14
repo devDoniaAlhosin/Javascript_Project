@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+  }
+  :root {
+    --registerPrimary: #292b2c;
+    --registerSecondary: #ff324d;
+    --registerlight: #424649;
+    --registerdark: #68718838;
+  }
+  .registerpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+  }
+  .registerpage .register-navbar {
+    margin-top: 70px;
+    width: 100%;
+    min-height: 180px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* background-color: var(--registerdark); */
+    background-color:#f9f9fa;
+    transition: 1s;
+  }
+  #register-navbartitle {
+    text-transform: capitalize;
+    font-size: 27px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+  .register-navbarul {
+    width: 300px;
+    height: 80px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #register-home {
+    color: var(--registerPrimary);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  #register-pages {
+    color: var(--registerPrimary);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  #register-register {
+    color: var(--registerPrimary);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  #register-home:hover {
+    color: var(--registerSecondary);
+    transition: 0.5s;
+  }
+  #register-pages:hover {
+    color: var(--registerSecondary);
+    transition: 0.5s;
+  }
+  
+  #register-register :hover {
+    color: var(--registerSecondary);
+    transition: 0.5s;
+  }
+  /* ---------------------------- */
+  .register-container {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .register-form {
+    min-width: 590px;
+    min-height: 600px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    /* box-shadow: 1px 1px 9px 1px lightgray;   */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .register-form h3 {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 400px;
+    /* align-self: flex-start; */
+    color: var(--registerPrimary);
+  }
+  #registername{
+    width: 400px;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    /* text-transform: capitalize; */
+  }
+  #registerEmail {
+    width: 400px;
+    padding: 10px 10px;
+    font-size: 18px;
+  
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    /* text-transform: capitalize; */
+  }
+  #registerPass {
+    width: 400px;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    /* text-transform: capitalize; */
+  }
+  #registerchpass{
+    width: 400px;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    /* text-transform: capitalize; */
+  }
+  .register-form .registerrest {
+    width: 70%;
+    margin-left: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #ff324d; */
+    align-items: center;
+    gap: 3px;
+    color: #687188;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+
+  }
+  #registersubmit {
+    width: 400px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    background-color: var(--registerSecondary);
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 1s;
+  }
+  #registersubmit:hover{
+      transition:1s;
+      background-color: white;
+      color: var(--registerSecondary);
+      border: 1px solid var(--registerSecondary);
+  }
+  .registerotheroptions {
+    width: 100%;
+    height: 70%;
+    /* background-color: #db4437; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  
+  /* Style for the list of register options */
+  
+  .registerList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Base style for the register option links */
+  .registerList a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  /* Specific styles for Facebook and Google register options */
+  .registerList a:nth-child(1) {
+    background-color: #3b5998; /* Facebook color */
+  }
+  
+  .registerList a:nth-child(2) {
+    background-color: #db4437; /* Google color */
+  }
+  
+  /* Hover effects for the register options */
+  .registerList a:hover {
+    opacity: 0.8;
+  }
+  .registernotneeded{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  margin-top: 1em;
+    gap: 2px;
+    text-transform: capitalize;
+    color:#687188;
+  }
+  .registernotneeded a{
+    text-decoration: none;
+    color: var(--registerPrimary);
+    transition: 0.5s;
+  }
+  .registernotneeded a:hover{
+transition: 0.5s;
+color: var(--registerSecondary);
+  }
+  /* ========== */
+  .subscribe-login {
+    width: 100%;
+    height: 200px;
+    margin-top: 7%;
+    margin-bottom: 0px !important;
+    background-color: #ff324d;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .subscribe-login h2 {
+    font-size: 28px;
+    color: white;
+    text-transform: capitalize;
+  }
+  .subscribe-login .email-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-inputlog input {
+    width: 400px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .email-inputlog button {
+    width: 100px;
+    padding: 10px 10px;
+    font-size: 16px;
+      background-color: #212529;
+    color: white;
+    transition: 1s;
+    text-transform: capitalize;
+  }
+  .email-inputlog button:hover {
+    color: #424649;
+    transition: 1s;
+    color: white;
+    border: 1px solid white;
+  }
+  #error-message {
+    color: #ff324d; /* Error color */
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none; /* Initially hidden */
+    text-align: center;
+}

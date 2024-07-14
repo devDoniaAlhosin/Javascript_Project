@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+:root {
+  --loginPrimary: #292b2c;
+  --loginSecondary: #ff324d;
+  --loginlight: #424649;
+  --logindark: #6871881a;
+}
+.loginpage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background-color: #687188; */
+  /* gap: 10px; */
+}
+.loginpage .login-navbar {
+  width: 100%;
+  margin-top: 1.25rem;
+  min-height: 180px !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* background-color: var(--logindark); */
+  background-color:#f9f9fa;
+  transition: 1s;
+}
+#login-navbartitle {
+  text-transform: capitalize;
+  font-size: 27px;
+  line-height: 15px;
+  font-weight: 600;
+}
+.login-navbarul {
+  width: 300px;
+  height: 80px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  line-height: 24px;
+  font-size: 16px;
+}
+#login-home {
+  color: var(--loginPrimary);
+  transition: 0.5s;
+  text-decoration: none;
+}
+#login-pages {
+  color: var(--loginPrimary);
+  transition: 0.5s;
+  text-decoration: none;
+}
+#login-login {
+  color: var(--loginPrimary);
+  transition: 0.5s;
+  text-decoration: none;
+}
+#login-home:hover {
+  color: var(--loginSecondary);
+  transition: 0.5s;
+}
+#login-pages:hover {
+  color: var(--loginSecondary);
+  transition: 0.5s;
+}
+
+#login-login :hover {
+  color: var(--loginSecondary);
+  transition: 0.5s;
+}
+/* ---------------------------- */
+.logincontainer {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background-color: #db4437; */
+}
+.login-form {
+  width: 600px;
+  min-height: 600px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  /* box-shadow: 1px 1px 9px 1px lightgray;   */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.login-form h3{
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-size: 27px;
+  font-weight: 400px;
+  line-height: 34px;
+
+  /* align-self: flex-start; */
+  color: var(--loginPrimary);
+
+} 
+.login-form input{
+  width: 400px;
+  padding: 10px 10px;
+  font-size: 18px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+.login-form .loginrest {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 3px; */
+  flex-wrap: wrap;
+  /* background-color: aliceblue; */
+}
+.loginrest .loginremember {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #687188;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.loginremember input{
+  width: 16%;
+  padding: 25%;
+  /* width: 10%; */
+}
+.loginremember span{
+  width: 90%;
+  height: 10%;
+  font-size:16px;
+  line-height: 24px;
+  color: #687188;
+  line-height: 24px;
+  /* background-color: #ac0e6f; */
+}
+.loginrest a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #687188;
+  font-size: 16px;
+  line-height: 24px;
+}
+#loginsubmit {
+  width: 400px;
+  padding: 10px 40px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  background-color: var(--loginSecondary);
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 1s;
+}
+#loginsubmit:hover{
+    transition:1s;
+    background-color: white;
+    color: var(--loginSecondary);
+    border: 1px solid var(--loginSecondary);
+}
+.loginotheroptions {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+/* Style for the list of login options */
+
+.loginList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Base style for the login option links */
+.loginList a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Specific styles for Facebook and Google login options */
+.loginList a:nth-child(1) {
+  background-color: #3b5998; /* Facebook color */
+}
+
+.loginList a:nth-child(2) {
+  background-color: #db4437; /* Google color */
+}
+
+/* Hover effects for the login options */
+.loginList a:hover {
+  opacity: 0.8;
+}
+
+.registerneeded{
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  text-transform: capitalize;
+  color:#687188;
+}
+.registerneeded a{
+  text-decoration: none;
+  color: var(--loginPrimary);
+  transition: 0.5s;
+}
+.registerneeded a:hover{
+transition: 0.5s;
+color: var(--loginSecondary);
+}
+/* =============subscribe===== */
+.subscribe-login {
+  width: 100%;
+  height: 200px;
+  margin-top: 7%;
+  margin-bottom: 0px !important;
+  background-color: #ff324d;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.subscribe-login h2 {
+  font-size: 28px;
+  color: white;
+  text-transform: capitalize;
+}
+.subscribe-login .email-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email-inputlog input {
+  width: 400px;
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.email-inputlog button {
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 16px;
+    background-color: #212529;
+  color: white;
+  transition: 1s;
+  text-transform: capitalize;
+}
+.email-inputlog button:hover {
+  color: #424649;
+  transition: 1s;
+  color: white;
+  border: 1px solid white;
+}

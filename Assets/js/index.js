@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check local storage for user info
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser && storedUser.username) {
-      updateUsername(storedUser.username);
+      // updateUsername(storedUser.username);
     }
   }
-  function updateUsername(username) {
-    showNavUser.textContent = username;
-    navUsername.style.display = "block";
-    usernavLogin.style.display = "none";
-  }
+  // function updateUsername(username) {
+  //   showNavUser.textContent = username;
+  //   navUsername.style.display = "block";
+  //   usernavLogin.style.display = "none";
+  // }
 
   // Handle profile link click - Added this section
   profileLink.addEventListener("click", function (event) {

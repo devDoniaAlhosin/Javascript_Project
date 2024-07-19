@@ -1,16 +1,16 @@
 // ========================================== Hanadling Nav login / logout All  ====================================
 document.addEventListener("DOMContentLoaded", function () {
-  const usernavLogin = document.getElementById("usernavLogin");
+  // const usernavLogin = document.getElementById("usernavLogin");
   const navUsername = document.getElementById("navUsername");
   const showNavUser = document.getElementById("showNavUser");
   const profileLink = document.getElementById("profileLink"); // Added this line
 
   // Function to update the DOM with the username
-  function updateUsername(username) {
-    usernavLogin.style.display = "none";
-    navUsername.style.display = "inline";
-    showNavUser.textContent = username;
-  }
+  // function updateUsername(username) {
+  //   usernavLogin.style.display = "none";
+  //   navUsername.style.display = "inline";
+  //   showNavUser.textContent = username;
+  // }
 
   // Check if user is logged in
   const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check local storage for user info
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser && storedUser.username) {
-      updateUsername(storedUser.username);
+      // updateUsername(storedUser.username);
     }
   }
-  function updateUsername(username) {
-    showNavUser.textContent = username;
-    navUsername.style.display = "block";
-    usernavLogin.style.display = "none";
-  }
+  // function updateUsername(username) {
+  //   showNavUser.textContent = username;
+  //   navUsername.style.display = "block";
+  //   usernavLogin.style.display = "none";
+  // }
 
   // Handle profile link click - Added this section
   profileLink.addEventListener("click", function (event) {
@@ -426,6 +426,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cartItems = [];
   }
 });
+
 // Initialize the page
 window.onload = function () {
   initializeProducts();

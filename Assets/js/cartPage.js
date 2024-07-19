@@ -162,7 +162,7 @@ function updateCartItems() {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 
   // Show/Hide the cart container when items are added
-  cartContainer.style.display = cartItems.length > 0 ? "block" : "none";
+  cartContainer.style.display = "none";
 }
 
 function createCartList(product) {
